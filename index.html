@@ -32,6 +32,7 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+
         @keyframes y-rotate {
             0% {
                 transform: rotateY(0deg);
@@ -41,11 +42,12 @@
                 transform: rotateY(360deg);
             }
         }
+
         .animate-y-rotate {
             animation: y-rotate 10s infinite linear;
         }
+
         .border-gradient {
-            border-bottom: 2px solid;
             border-image: linear-gradient(to right, transparent, rgba(128, 128, 128, 0.438), transparent);
             border-image-slice: 1;
         }
@@ -53,11 +55,10 @@
 </head>
 
 <body class="font-lato">
-    <header class="container mx-auto mt-8 lg:px-40">
+    <header class="container mx-auto mt-8 lg:px-40 ">
 
         <!-- navbar section -->
-        <nav
-            class="w-full mb-12  px-5 lg:px-10 lg:py-5 navbar lg:bg-primary-bg rounded-[600px] lg:text-white">
+        <nav class="w-full mb-12  px-5 lg:px-10 lg:py-5 navbar lg:bg-primary-bg rounded-[600px] lg:text-white">
             <div class="navbar-start space-x-5 text-lg font-medium hidden lg:block">
                 <a href="">Home</a>
                 <a href="">About Us</a>
@@ -65,7 +66,8 @@
                 <a href="">All Fruits</a>
             </div>
             <div class="navbar-center space-x-4">
-                <img class="object-contain transform-style-preserve-3d animate-y-rotate border-gradient pb-2" src="./images/logo.png" alt="logo">
+                <img class="object-contain transform-style-preserve-3d animate-y-rotate border-gradient border-b-2 pb-2"
+                    src="./images/logo.png" alt="logo">
                 <h2 class="text-2xl md:text-4xl font-bold">Fruit Burst</h2>
             </div>
             <div class="navbar-end ">
@@ -85,7 +87,8 @@
             <div class="dropdown dropdown-left relative lg:hidden">
                 <label tabindex="0" class="btn absolute -bottom-[25px] right-[1px] btn-ghost btn-circle">
                     <img src="./images/burgur.svg" alt="hamburgur" class="w-[35px]"> </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content w-[150px] mt-3 z-[1] -ml-8 bg-base-100 rounded-box">
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content w-[150px] mt-3 z-[1] -ml-8 bg-base-100 rounded-box">
                     <li><a>Home</a></li>
                     <li><a>About Us</a></li>
                     <li><a>Shop</a></li>
@@ -108,8 +111,7 @@
             </div>
         </nav>
         <!--banner slider section -->
-        <section
-            class="carousel w-full relative rounded-lg h-[300px] md:h-[610px] lg:h-[730px]">
+        <section class="carousel w-full relative rounded-lg h-[300px] md:h-[610px] lg:h-[730px]">
             <!--banner slider 1 -->
             <div id="slide1" class="carousel-item border border-black-700 hero relative w-full md:h-[600px]"
                 style="background-image: url('./images/banner1.png'); background-size: 100% 100%;">
@@ -321,29 +323,29 @@
                 </div>
                 <div class=" grid grid-flow-col gap-5 text-center auto-cols-max">
                     <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span class="font-extrabold" style="--value:15;"></span>
+                        <span class=" font-mono text-5xl">
+                            <span class="font-extrabold" id="days"></span>
                         </span>
                         <p class="text-title font-medium">Days</p>
                     </div>
                     <p class="text-2xl font-extrabold mt-3">:</p>
                     <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span class="font-extrabold" style="--value:10;"></span>
+                        <span class=" font-mono text-5xl">
+                            <span class="font-extrabold" id="hours"></span>
                         </span>
                         <p class="text-title font-medium">Hours</p>
                     </div>
                     <p class="text-2xl font-extrabold mt-3">:</p>
                     <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span class="font-extrabold" style="--value:24;"></span>
+                        <span class=" font-mono text-5xl">
+                            <span class="font-extrabold" id="minutes"></span>
                         </span>
                         <p class="text-title font-medium">Minutes</p>
                     </div>
                     <p class="text-2xl font-extrabold mt-3">:</p>
                     <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span class="font-extrabold" style="--value:43;"></span>
+                        <span class="font-mono text-5xl">
+                            <span class="font-extrabold"  id="seconds"></span>
                         </span>
                         <p class="text-title font-medium">Seconds</p>
                     </div>
@@ -639,8 +641,7 @@
                         2000 years old.
                     </p>
                     <!-- team card container -->
-                    <div
-                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-4 ">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-4 ">
                         <div class="card  bg-transparent">
                             <figure class="px-10 pt-10">
                                 <img src="./images/member1.png" alt="memeber" class="rounded-xl" />
@@ -797,7 +798,8 @@
 
     <footer class="footer px-2 py-7 lg:px-40 lg:py-32 footer-center p-10 bg-[#121212] text-white">
         <div class="flex space-x-4">
-            <img class="object-contain transform-style-preserve-3d animate-y-rotate border-gradient pb-2" src="./images/logo.png" alt="logo">
+            <img class="object-contain transform-style-preserve-3d animate-y-rotate border-gradient border-b-2 pb-2"
+                src="./images/logo.png" alt="logo">
             <h2 class="text-2xl md:text-5xl font-bold">Fruit Burst</h2>
         </div>
         <div class="px-5 flex flex-wrap justify-center gap-8 lg:gap-16 lg:my-14 my-7 text-lg font-semibold">
@@ -819,6 +821,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
